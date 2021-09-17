@@ -1,0 +1,1139 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	transition-duration: .8s;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+}
+input,textarea,select{
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "Circular-Std-Regular", Arial;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+    max-width: 1280px;
+}
+ul{
+    list-style: none;
+}
+header {
+    position: fixed;
+    background: white;
+    width: 100%;
+    border-top: 8px solid #5ccb8e;
+    transition: 0.5s ease-in;
+    z-index: 3;
+}
+header .wrapper { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .wrapper .left { 
+
+}
+header .wrapper .left a { 
+    font-size: 20px;
+    font-weight: 700;
+
+}
+header .wrapper .middle { 
+
+}
+header .wrapper .middle ul { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .middle ul li.menus.active{
+    background:#5ccb8e;
+}
+header .wrapper .middle ul li {
+}
+header .wrapper .middle ul li:hover a {
+    background: #5ccb8e;
+    color: #fff;
+    transition: 0.5s ease-in;
+  
+}
+header .wrapper .middle ul li a {
+    padding: 32px 20px;
+    display: inline-block;
+    color: #898989;
+    font-size: 14px;
+    transition: 0.5s ease-in;
+}
+header .wrapper .middle ul li.active a{
+    color: white;
+}
+header .wrapper .right { 
+    display: flex;
+}
+header .wrapper .right img { 
+    color: white;
+    filter: invert(1);
+}
+    header .wrapper .right a { 
+    color: #898989;
+    font-size: 14px;
+}
+header .wrapper .right a:hover i{
+    color: #5ccb8e;
+    background: #fff;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 3px;
+    transform: scale(1.2);
+}
+header .wrapper .right a i{
+    color: rgb(255, 255, 255);
+    background: #5ccb8e;
+    padding: 12px;
+    border-radius: 50%;
+    border: 1px solid #5ccb8e;
+    margin-right: 3px;
+}
+
+#menu-icon {
+    display: none;
+    width: 35px;
+}
+#menu-icon img {
+    width: 100%;
+    display: block;
+}
+#mobile-menu {
+    
+}
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -280px;
+    background: #fff;
+    padding: 30px;
+    z-index: 2;
+    bottom: 0;
+    width: 240px;
+    padding-top: 40px;
+    transition: all 0.4s ease-in;
+}
+span.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
+span.overlay.active {
+    display:block;
+}
+span.close {
+    position: fixed;
+    right: 300px;
+    top: 40px;
+    width: 20px;
+    height: 20px;
+    display: none;
+    cursor: pointer;
+    z-index: 4;
+    filter: invert(1);
+}
+span.close img {
+    display: block;
+    width: 100%;
+}
+span.close.active {
+    display: block;
+}
+#mobile-menu.active {
+    right: 0;
+}
+span.overlay.active  {
+    display: block;
+}
+#mobile-menu ul li {
+    margin-bottom: 20px;
+}
+#mobile-menu ul li:last-child {
+    margin-bottom: 0;
+}
+#mobile-menu ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    display: block;
+}
+
+#spotlight {
+    background: url(../images/slider-image1.jpg) no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+#spotlight section.overlay{
+    height: 100vh;
+    background-color: rgb(14 13 13 / 40%);
+}
+#spotlight section.overlay section.wrapper { 
+
+}
+#spotlight section.overlay  section.wrapper div.container {
+    padding-top: 22%;
+}
+#spotlight section.overlay section.wrapper div.container h1 {
+    font-size: 45px;
+    font-weight: 400;
+    width: 44%;
+    color: white;
+    margin-bottom: 10px;
+}
+#spotlight section.overlay section.wrapper div.container p { 
+    color: #c3bebe;
+    margin-bottom: 30px;
+    width: 53%;
+}
+#spotlight section.overlay section.wrapper div.container a{
+    font-size: 18px;
+    transition: 0.5s ease-in;
+}
+#spotlight section.overlay section.wrapper div.container .button {
+    border: 1px solid white;
+    color: white;
+    padding: 16px 26px;
+    display: inline;
+    border-radius: 26px;
+}
+#spotlight section.overlay section.wrapper div.container .button:hover{
+    background: white;
+    transition: 0.5s ease-in;
+    color: grey;
+}
+#trend { 
+    padding: 10%;
+}
+#trend section.wrapper { 
+
+}
+#trend section.wrapper div.items { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#trend section.wrapper div.items div.item {
+    width: 30%;
+    border: 1px solid #f2f2f2;
+    padding: 70px 26px 70px 26px;
+    transition: 0.3s ease-in-out;
+}
+#trend section.wrapper div.items div.item:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s ease-in-out;
+}
+#trend section.wrapper div.items div.item span { 
+
+}
+#trend section.wrapper div.items div.item span h3 { 
+    background: #3f51b5;
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    border-radius: 50%;
+}
+#trend section.wrapper div.items div.item h2 { 
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+#trend section.wrapper div.items div.item p { 
+    font-size: 14px;
+    color: #b9b9b9;
+}
+#info { 
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#info section.wrapper { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#info section.wrapper div.left { 
+
+}
+#info section.wrapper div.left h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    width: 80%;
+}
+#info section.wrapper div.left ul { 
+
+}
+#info section.wrapper div.left ul li { 
+
+}
+#info section.wrapper div.left ul li div.left { 
+
+}
+#info section.wrapper div.left ul li div.left div.image-container { 
+
+}
+#info section.wrapper div.left ul li div.left div.image-container img { 
+
+}
+#info section.wrapper div.left ul li div.right { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#info section.wrapper div.left ul li div.right i{
+    padding: 12px;
+    background: #5ccb8e;
+    color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+#info section.wrapper div.left ul li div.right h2 { 
+    font-size: 22px;
+    font-weight: 600;
+}
+#info section.wrapper div.left ul li div.right p { 
+    color: #9a9a9a;
+    font-size: 14px;
+    width: 84%;
+    margin-top: 5px;
+}
+#info section.wrapper div.rights {
+    background: #252020;
+    padding: 8% 1%;
+    border-radius: 50%;
+    /* width: 40%; */
+    /* height: 500px; */
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 82%);
+}
+#info section.wrapper div.rights div.container{
+  
+}
+#info section.wrapper div.rights div.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+#info section.wrapper div.rights div.container form {
+    text-align: center;
+    
+}
+#info section.wrapper div.rights div.container form input {
+    border-bottom: 1px solid grey;
+    margin-bottom: 26px;
+    width: 72%;
+    padding-bottom: 11px;
+    color: white;
+}
+#info section.wrapper div.rights div.container a{
+    font-size: 14px;
+    color: rgb(32, 32, 32);
+}
+
+#info section.wrapper div.rights div.container a.button {
+    text-align: center;
+    background: white;
+    padding: 12px 22px;
+    display: inline-block;
+    border-radius: 50px;
+    color: gray;
+}
+#info section.wrapper div.rights div.container a.button:hover{
+    filter: brightness(0.7);
+    transition: 0.3s ease-in-out;
+}
+#teachers {
+    padding: 160px 0;
+}
+#teachers section.wrapper { 
+     text-align: center;
+}
+#teachers section.wrapper h2 {
+
+font-weight: 700;
+}
+#teachers section.wrapper small {
+    color: #989393;
+}
+#teachers section.wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+#teachers section.wrapper ul li {
+    width: 33.33%;
+    margin-right: 20px;
+    transition: 0.5s ease-in-out;
+}
+#teachers section.wrapper ul li:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.5s ease-in-out;
+}
+#teachers section.wrapper ul li div.top { 
+
+}
+#teachers section.wrapper ul li div.top div.image-conatiner { 
+
+}
+#teachers section.wrapper ul li div.top div.image-conatiner img {
+    display: block;
+    width: 100%;
+}
+#teachers section.wrapper ul li div.bottom {
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 30px;
+    height: 150px;
+}
+#teachers section.wrapper ul li div.bottom h2 {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#teachers section.wrapper ul li div.bottom small {
+    text-align: left;
+}
+#teachers section.wrapper ul li div.bottom div.icon {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+#teachers section.wrapper ul li div.bottom div.icon a {
+    color: black;
+}
+#teachers section.wrapper ul li div.bottom div.icon a i{
+    margin-right: 20px;
+    padding: 6px;
+    border-radius: 50%;
+}
+#teachers section.wrapper ul li div.bottom div.icon a i:hover{
+    background: #5ccb8e;
+    color: white;
+}
+#popular-courses { 
+
+}
+#popular-courses section.wrapper { 
+
+}
+#popular-courses section.wrapper div.container {
+    text-align: center;
+    padding-bottom: 100px;
+}
+#popular-courses section.wrapper div.container div.owl-nav{
+    position: absolute;
+    bottom: -80px;
+}
+#popular-courses section.wrapper div.container div.owl-nav button.owl-prev{
+
+}
+#popular-courses section.wrapper div.container div.owl-nav button.owl-prev span{
+    padding: 4px 14px;
+    background: #d6d6d6;
+    border-radius: 4px;
+    color: white;
+    margin-right: 10px;
+}
+#popular-courses section.wrapper div.container div.owl-nav button.owl-next{
+
+}
+#popular-courses section.wrapper div.container div.owl-nav button.owl-next span{
+    padding: 4px 14px;
+    background: #d6d6d6;
+    border-radius: 4px;
+    color: white;
+    margin-right: 10px;
+}
+#popular-courses section.wrapper div.container h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+#popular-courses section.wrapper div.container small {
+    color: #b2b2b2;
+    font-weight: 500;
+    font-size: 16px;
+}
+#popular-courses section.wrapper div.container div.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#popular-courses section.wrapper div.container div.items div.item {
+    margin-right: 30px;
+    z-index: -4;
+}
+#popular-courses section.wrapper div.container div.items div.item div.top {
+
+width: 100%;
+}
+#popular-courses section.wrapper div.container div.items div.item div.top div.img-container {
+    position: relative;
+    z-index: -2;
+    width: 100%;
+}
+#popular-courses section.wrapper div.container div.items div.item div.top div.img-container img {
+    display: block;
+    width: 100%;
+}
+#popular-courses section.wrapper div.container div.items div.item div.top div.img-container span {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: left;
+    color: white;
+    padding: 20px 20px;
+    bottom: 0;
+    background: linear-gradient(359deg, #000000ab, transparent);
+}
+#popular-courses section.wrapper div.container div.items div.item div.top div.img-container span a { 
+    color: #fff;
+}
+#popular-courses section.wrapper div.container div.items div.item div.bottom {
+
+padding-left: 10px;
+}
+#popular-courses section.wrapper div.container div.items div.item div.bottom div.one {
+    text-align: left;
+}
+#popular-courses section.wrapper div.container div.items div.item div.bottom div.one h1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+#popular-courses section.wrapper div.container div.items div.item div.bottom div.one p {
+    color: #7b7272;
+    margin-top: 5px;
+    font-size: 14px;
+    width: 80%;
+}
+#popular-courses section.wrapper div.container div.items div.item div.bottom div.two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#popular-courses section.wrapper div.container div.items div.item div.bottom div.two div.img-container {
+    width: 20%;
+    margin-right: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#popular-courses section.wrapper div.container div.items div.item div.bottom div.two div.img-container img {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#popular-courses section.wrapper div.container div.items div.item div.bottom div.two div.text h4 { 
+
+}
+#popular-courses section.wrapper div.container div.items div.item div.bottom div.two a.button {
+    /* margin-left: 96px; */
+    background: #3f51b5;
+    color: white;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+#popular-courses section.wrapper div.container div.items div.item div.bottom div.two a.button2{
+    margin-left: 96px;
+    background: #5ccb8e;
+    color: white;
+    padding: 6px 10px;
+    font-size: 14px;
+}
+section#student-review {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+    background: #f1f1f1;
+}
+section#student-review section.wrapper { 
+
+}
+section#student-review section.wrapper div.container { 
+
+}
+section#student-review section.wrapper div.container h1 { 
+    font-size: 30px;
+    font-weight: 600;
+}
+section#student-review section.wrapper div.container div.glide{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+section#student-review section.wrapper div.container div.glide div.glide_track{
+
+}
+section#student-review section.wrapper div.container small {
+    color: #b5adad;
+    font-size: 16px;
+}
+section#student-review section.wrapper div.container div.items {
+    display: flex;
+    justify-content: space-between;
+}
+section#student-review section.wrapper div.container div.items div.item {
+    width: 31.33%;
+    background: #fff;
+    margin-top: 100px;
+    padding: 2% 1%;
+    margin: 0 auto;
+}
+section#student-review section.wrapper div.container div.items div.item div.top {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+section#student-review section.wrapper div.container div.items div.item div.top div.img-container {
+    width: 20%;
+    margin-right: 20px;
+}
+section#student-review section.wrapper div.container div.items div.item div.top div.img-container img {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+section#student-review section.wrapper div.container div.items div.item div.top div.name {
+    text-align: left;
+}
+section#student-review section.wrapper div.container div.items div.item div.top div.name h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+section#student-review section.wrapper div.container div.items div.item div.top div.name small {
+    color: #c3b8b8;
+}
+section#student-review section.wrapper div.container div.items div.item div.bottom {
+    text-align: left;
+}
+section#student-review section.wrapper div.container div.items div.item div.bottom p {
+    font-size: 16px;
+    width: 85%;
+    color: #968f8f;
+}
+section#student-review section.wrapper div.container div.items div.item div.bottom span {
+    color: blue;
+    font-weight: 700;
+}
+#contact {
+    background:#3f51b5;
+    padding: 6%;
+}
+#contact section.wrapper { 
+
+}
+#contact section.wrapper div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact section.wrapper div.container div.left {
+    width: 50%;
+}
+#contact section.wrapper div.container div.left h2 {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#contact section.wrapper div.container div.left h4 {
+    color: #ffffff8f;
+    margin-bottom: 10px;
+}
+#contact section.wrapper div.container div.left form {
+    margin-top: 40px;
+}
+#contact section.wrapper div.container div.left form input {
+    background: white;
+    padding: 14px;
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+#contact section.wrapper div.container div.left form input[type="submit"]{
+    text-align: left;
+    width: 30%; 
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 17px 33px;
+    border-radius: 30px;
+    color: #6d6767;
+    transition: 0.5s ease-in-out;
+}
+#contact section.wrapper div.container div.left form input[type="submit"]:hover{
+    filter: brightness(0.7);
+    transition: 0.5s ease-in-out;
+}
+
+#contact section.wrapper div.container div.left form textarea {
+    background: white;
+    width: 90%;
+    border-radius: 8px;
+    padding: 12px;
+    height: 137px;
+}
+#contact section.wrapper div.container div.right {
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contact section.wrapper div.container div.right img {
+    display: block;
+    width: 100%;
+    transition: transform .2s;
+}
+#contact section.wrapper div.container div.right img:hover{
+    transform: scale(1.01);
+}
+footer {
+    background: #252020;
+    color: white;
+    padding: 8% 4%;
+}
+footer section.wrapper { 
+
+}
+footer section.wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer section.wrapper ul li {
+    width: 22%;
+    /* margin-right: 45px; */
+}
+footer section.wrapper ul li a{
+    color: #5f5f5f;
+    font-size: 14px;
+}
+
+footer section.wrapper ul li h2 {
+    margin-bottom: 10px;
+    margin-top: 24px;
+}
+footer section.wrapper ul li small {
+    color: #5f5f5f;
+    font-size: 14px;
+}
+footer section.wrapper ul li div.icons {
+    height: 68px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+footer section.wrapper ul li div.icons a {
+
+}
+footer section.wrapper ul li div.icons a i{
+    color: #5ccb8e;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+footer section.wrapper ul li div.icons a i:hover{
+    background: #5ccb8e;
+    padding: 6px;
+    border-radius: 50%;
+    color: white;
+}
+footer section.wrapper ul li form{
+    margin-bottom: 20px;
+}
+footer section.wrapper ul li form input{
+
+}
+footer section.wrapper ul li form input[type="submit"]{
+    border: 1px solid grey;
+    color: grey;
+    padding: 12px 40px;
+    border-radius: 20px;   
+    display: inline-block;
+}
+footer section.wrapper ul li form input[type="submit"]:hover{
+    background: white;
+    color: black;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+footer section.wrapper ul li form input[type="email"]{
+    width: 100%;
+    border-bottom: 1px solid grey;
+    padding: 8px;
+    margin-bottom: 20px;
+    color: white;
+}
+@media all and (max-width:1280px){
+    #info section.wrapper div.left {
+        width: 60%;
+    }
+    #contact section.wrapper div.container div.left form input[type="submit"] {
+        width: 36%;
+    }
+    /* #info section.wrapper div.rights{
+        width: 43%;
+        height: 430px;
+    } */
+}
+@media all and (max-width:1080px){
+    #menu-icon img{
+        width: 70%;
+    }
+    header{
+        height: 89px;
+    }
+    #trend section.wrapper div.items div.item{
+        width: 33%;
+    }
+    #info section.wrapper div.left h1 {
+        font-size: 18px;
+        width: 100%;
+    }
+    #info section.wrapper div.left ul li div.right h2 {
+        font-size: 16px;
+    }
+    #info section.wrapper div.left ul li div.right i{
+        padding: 8px;
+        font: 27px;
+        font-size: 28px;
+    }
+    #info section.wrapper div.left{
+        width: 54%;
+    }
+    footer section.wrapper ul li {
+        width: 18%;
+    }
+    /* #info section.wrapper div.rights{
+        width: 56%;
+        height: 500px;
+    } */
+    footer section.wrapper ul li form input[type="submit"] {
+        padding: 8px 30px;
+    }
+}
+@media all and (max-width: 980px) {
+    #menu-icon {
+        display: block;
+    }
+    header div.middle {
+        display: none;
+    }
+    header .wrapper .right{
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu-icon{
+        width: 4%;
+    }
+    header .wrapper .left a{
+        font-size: 22px;
+    }
+    #spotlight section.overlay section.wrapper div.container h1 {
+        width: 100%;
+        font-size: 44px;
+    }
+    #spotlight section.overlay section.wrapper div.container p {
+        width: 100%;
+    }
+    #trend{
+        padding: 10% 0;
+    }
+    #info section.wrapper{
+        flex-wrap: wrap;
+    }
+    #info section.wrapper div.left{
+        width: 100%;
+    }
+    #info section.wrapper div.rights{
+        padding: 12% 1%;
+        margin-top: 50px;
+    }
+    #teachers section.wrapper ul li div.top div.image-conatiner {
+        width: 60%;
+        margin: 0 auto;
+    }
+    #teachers section.wrapper ul{
+        flex-wrap: wrap;
+    }
+    #teachers section.wrapper ul li{
+        width: 46%;
+        margin-bottom: 20px;
+    }
+    #teachers section.wrapper ul li div.bottom{
+        text-align: center;
+    }
+    #teachers section.wrapper ul li div.bottom h2{
+        text-align: center;
+    }
+    #teachers section.wrapper ul li div.bottom small{
+        text-align: center;
+    }
+    #popular-courses section.wrapper div.container div.items div.item div.bottom div.two a.button{
+        margin-left: auto;
+    }
+    #popular-courses section.wrapper div.container div.items div.item div.bottom div.two div.img-container{
+        width: 12%;
+    }
+    #popular-courses section.wrapper div.container div.items div.item div.bottom div.two a.button2{
+        margin-left: auto;
+    }
+    section#student-review section.wrapper div.container div.items div.item div.bottom p{
+        width: 100%;
+    }
+    #contact section.wrapper div.container{
+        flex-wrap: wrap;
+    }
+    #contact section.wrapper div.container div.left {
+        width: 100%;
+    }
+    #contact section.wrapper div.container div.left form input[type="submit"]{
+        width: 100%;
+        text-align: center;
+    }
+    #contact section.wrapper div.container div.left form textarea{
+        width: 100%;
+    }
+    #contact section.wrapper div.container div.left form input{
+        width: 100%;
+    }
+    #contact section.wrapper div.container div.right {
+        width: 75%;
+        margin-top: 30px;
+    }
+    #contact section.wrapper div.container div.right img{
+        border-radius: 5px;
+    }
+    footer section.wrapper ul{
+        flex-wrap: wrap;
+    }
+    footer section.wrapper ul li{
+        width: 42%;
+    }
+    footer section.wrapper ul li form input[type="submit"] {
+        width: 100%;
+        padding: 12px 30px;
+    }
+}
+@media all and (max-width: 768px){
+    #spotlight section.overlay section.wrapper div.container h1{
+        font-size: 34px;
+    }
+    #spotlight section.overlay section.wrapper div.container p{
+        color: aliceblue;
+    }
+    #spotlight section.overlay section.wrapper div.container .button{
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    #trend section.wrapper div.items{
+        flex-wrap: wrap;
+    }
+    #trend section.wrapper div.items div.item{
+        width: 100%;
+        padding: 6px 26px;
+    }
+    #info section.wrapper div.rights{
+        width: 70%;
+        margin: 50px auto;
+    }
+    #teachers section.wrapper ul li{
+        width: 100%;
+    }
+    footer section.wrapper ul li{
+        width: 100%;
+    }
+    footer section.wrapper ul li a{
+        margin-right: 2px;
+    }
+    header .wrapper .left a{
+        font-size: 22px;
+    }
+    #teachers{
+        padding: 30px;
+    }
+    #teachers section.wrapper ul li div.top div.image-conatiner{
+        width: 45%;
+    }
+    #teachers section.wrapper ul li div.bottom{
+        text-align: center;
+    }
+    #teachers section.wrapper ul li div.bottom h2{
+        text-align: center;
+    }
+    #popular-courses section.wrapper div.container div.items div.item div.top{
+        width: 60%;
+        margin: 0 auto;
+    }
+    #popular-courses section.wrapper div.container div.items div.item div.bottom div.one h1{
+        text-align: center;
+    }
+    #popular-courses section.wrapper div.container div.items div.item div.bottom div.one p{
+        text-align: center;
+    }
+    #popular-courses section.wrapper div.container div.items div.item div.bottom div.two{
+        margin: 0 auto;
+        width: 60%;
+    }
+    section#student-review section.wrapper div.container div.items div.item{
+        padding: 1%;
+    }
+}
+@media all and (max-width: 640px){
+    #info section.wrapper div.left ul li div.right p{
+        width: 100%;
+    }
+    #spotlight section.overlay section.wrapper div.container{
+        padding-top: 36%;
+    }
+    #teachers section.wrapper ul li{
+        margin-right: 0;
+    }
+    #popular-courses section.wrapper div.container div.items div.item{
+        margin-right: 0;
+    }
+    #popular-courses section.wrapper div.container div.items div.item div.bottom div.one p{
+        width: 100%;
+    }
+    #mobile-menu{
+        right: 0;
+        top: -280px;
+        bottom: unset;
+        width: 100%;
+        text-align: center;
+    }
+    #mobile-menu.active{
+        top: 0;
+    }
+    span.close{
+        right: 28px;
+    }
+    #trend{
+        padding: 5% 0%;
+    }
+    #info{
+        padding: 0;
+    }
+    #teachers section.wrapper ul li div.bottom{
+        margin-left: 0;
+    }
+@media all and (max-width: 480px){
+    #teachers section.wrapper ul li div.bottom div.icon{
+        padding: 0;
+        margin-top: 20px;
+    }
+    #teachers{
+        padding: 10px;
+    }
+    #teachers section.wrapper ul li div.bottom{
+        height: 90px;
+    }
+    #info section.wrapper div.rights{
+        width: 100%;
+        padding: 16% 1%;
+    }
+    section#student-review{
+        padding-bottom: 20%;
+    }
+    #info section.wrapper div.rights{
+        padding: 3% 1%;
+    }
+    #info section.wrapper div.rights div.container{
+        padding: 12% 0%;
+    }
+    #info section.wrapper div.rights div.container form {
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
+    #info section.wrapper div.rights div.container form input {
+        border-bottom: 1px solid grey;
+        margin-bottom: 12px;
+        width: 100%;
+        padding-bottom: 10px;
+        color: white;
+    }
+    #info section.wrapper div.rights div.container h1{
+        font-size: 22px;
+    }
+    #menu-icon {
+        width: 6%;
+    }
+    #info section.wrapper div.rights div.container a.button{
+        padding: 6px 12px;
+    }
+}
+@media all and (max-width: 480px){
+    #spotlight section.overlay section.wrapper div.container h1{
+        font-size: 24px;
+    }
+    #spotlight section.overlay section.wrapper div.container p{
+        font: 14px;
+    }
+    #spotlight section.overlay section.wrapper div.container{
+        padding-top: 68%;
+    }
+}
